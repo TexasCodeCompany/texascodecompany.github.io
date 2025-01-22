@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Code Company - AI Development Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+   /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navbar Styling */
+nav {
+    background: #000000;
+    color: #ffffff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #000000, #000000);
+    color: #ffffff;
+    height: auto;
+}
+
+#hero img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    flex: 1;
+    padding: 2rem;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content button {
+    padding: 0.75rem 1.5rem;
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.hero-content button:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: #ffffff;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+section p, section ul {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555555;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: #555555;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero img {
+        max-width: 80%;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}
+</style>
+<body>
+
+    <!-- Navbar -->
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" aria-labelledby="hero-title">
+        <img src="./images/TexasCodeCompany.png" alt="Texas Code Company Office" />
+        <div class="hero-content">
+            <h1 id="hero-title">Texas Code Company</h1>
+            <p>Leading the development of new AI technology applications. </p>
+            <button onclick="window.location.href='#about'">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About Us</h2>
+        <p>Texas Code Company provides AI applications that enhance efficiency and generate value. Our goals are optimize processes, enhance engagement, and drive sustainable growth.</p>
+    </section>
+
+    <!-- Why Texas Code Company Section -->
+    <section id="why" aria-labelledby="why-title">
+        <h2 id="why-title">Why Choose Texas Code Company?</h2>
+        <p>With our AI expertise and a commitment to understanding each client’s needs, we offer personalized, impactful solutions.</p>
+        <ul>
+            <li>Experienced AI Developers</li>
+            <li>Customized Business Solutions</li>
+            <li>Dedicated Customer Support</li>
+        </ul>
+    </section>
+
+        <!-- Services Section -->
+        <section id="services" aria-labelledby="services-title">
+            <h2 id="services-title">Our Services</h2>
+            <p>At Texas Code Company, we offer a variety of AI-driven solutions to meet your business needs:</p>
+            <ul>
+                <li><strong>Data Analysis and Visualization:</strong> Transform raw data into actionable insights.</li>
+                <li><strong>Machine Learning Models:</strong> Tailored algorithms to predict and optimize outcomes.</li>
+                <li><strong>AI Integration:</strong> Seamlessly incorporate AI into your existing systems.</li>
+                <li><strong>Process Automation:</strong> Increase efficiency and reduce costs through automation.</li>
+            </ul>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" aria-labelledby="team-title">
+            <h2 id="team-title">Meet Our Team</h2>
+            <p>Our dedicated team of experts works tirelessly to deliver exceptional results for our clients:</p>
+            <div>
+                <h3>Jonah Bardos</h3>
+                <p>Chief Executive Officer and Founder: With over 10 years in increasingly challenging software engineering projects and progressive academic growth,
+                    Jonah is leveraging his graduate and doctoral studies to futher advance the AI concepts delivered by Texas Code Company.
+                </p>
+            </div>
+            <div>
+                <h3>Paul Turner</h3>
+                <p>Chief Operations Officer and Co-Founder: - Paul has over 8 years in building businesses and delivering exceptional quality to client's customers.
+                    Paul is focused on unlocking value for clients.
+                </p>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" aria-labelledby="blog-title">
+            <h2 id="blog-title">Latest Insights</h2>
+            <p>Stay updated with the latest trends and developments in AI:</p>
+            <ul>
+                <li><a href="#">How AI is Revolutionizing Small Businesses</a></li>
+                <li><a href="#">Top 5 AI Trends to Watch in 2024</a></li>
+                <li><a href="#">Case Study: Optimizing Retail Operations with AI</a></li>
+            </ul>
+        </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" aria-labelledby="testimonials-title">
+        <h2 id="testimonials-title">What Our Clients Say</h2>
+        <blockquote>
+            <p>"Texas Code Company transformed our processes with their innovative AI solutions!"</p>
+            <footer>- A Satisfied Client</footer>
+        </blockquote>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" aria-labelledby="products-title">
+        <h2 id="products-title">Our Products</h2>
+        <p>Discover our range of AI products, designed to streamline business operations and enhance the customer experience.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" aria-labelledby="portfolio-title">
+        <h2 id="portfolio-title">Portfolio</h2>
+        <p>Explore some of our recent AI-driven projects and see how we've helped clients achieve their goals.</p>
+    </section>
+
+      <!-- Contact Section -->
+<section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Get in Touch</h2>
+    <p>Have questions or want to learn more? Contact us today!</p>
+    <form action="https://formspree.io/f/xeqyrgva" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+
+
+    <!-- Footer -->
+    <footer id="footer" aria-labelledby="footer-title">
+        <h2 id="footer-title" class="visually-hidden">Footer</h2>
+        <p>&copy; 2024 Texas Code Company. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@texascode.com">info@texascode.com</a></p>
+    </footer>
+
+</body>
+</html>
